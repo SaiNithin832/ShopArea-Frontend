@@ -1,16 +1,120 @@
-# React + Vite
+# 🛒 ShopArea - React Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ShopArea is a modern e-commerce frontend application built using React and Vite.  
+It connects with the ShopArea Spring Boot backend to provide a complete full-stack shopping experience.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+### 👤 Authentication
+- Secure Login & Registration
+- Role-based routing (Admin / Customer)
+- Protected routes
+- Logout functionality
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🛍 Customer Features
+- View products
+- Category-based filtering
+- Add to cart
+- Cart count indicator
+- Responsive product cards
+- Modern UI with hover effects
 
-## Expanding the ESLint configuration
+### 🛠 Admin Features
+- Add Product
+- Delete Product
+- View User Details
+- Business Analytics (Monthly, Daily, Yearly, Overall)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠 Tech Stack
+
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS (Custom Styling)
+- Fetch API
+- React Router
+
+---
+
+## 📂 Project Structure
+
+
+src/
+├── components/
+├── pages/
+├── styles/
+├── assets/
+├── App.jsx
+└── main.jsx
+
+
+---
+
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone Repository
+
+
+git clone https://github.com/your-username/ShopArea-Frontend.git
+
+
+### 2️⃣ Install Dependencies
+
+
+npm install
+
+
+### 3️⃣ Start Development Server
+
+
+npm run dev
+
+
+Application runs on:
+
+
+http://localhost:5173
+
+
+---
+
+## 🔗 Backend Integration
+
+Make sure backend is running on:
+
+
+http://localhost:9092
+
+
+Frontend communicates with backend using REST APIs.
+
+---
+
+## 🌟 UI Highlights
+
+- Clean grid-based layout
+- Animated product hover effects
+- Modern dashboard cards
+- Gradient backgrounds
+- Professional login UI
+
+---
+
+## 🧠 Future Improvements
+
+- Payment Gateway Integration
+- Order History Page
+- Product Search
+- Image Upload from Admin Panel
+- Deployment to Vercel
+
+---
+
+## 👨‍💻 Author
+
+Nithin Sai  
+Full Stack Developer
