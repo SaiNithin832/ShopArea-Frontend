@@ -1,0 +1,64 @@
+/* ================= CART ICON ================= */
+
+.cart-icon {
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.cart-icon-svg {
+  width: 26px;
+  height: 26px;
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+.cart-icon:hover .cart-icon-svg {
+  transform: scale(1.15);
+}
+
+/* Badge */
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -10px;
+  background: #ff4d4f;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 7px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+  box-shadow: 0 0 0 2px #159bb5;
+}
+
+/* ===============================
+   BRAND LOGO
+================================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  font-size: 26px;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .brand-icon {
+  transform: rotate(-8deg) scale(1.05);
+}
+
+.brand-name {
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: white;
+}

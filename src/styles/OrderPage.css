@@ -1,0 +1,203 @@
+/* ===============================
+   PAGE BACKGROUND
+================================= */
+
+.customer-homepage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #f7f9fb 0%, #eef2f6 100%);
+}
+
+/* ===============================
+   MAIN CONTENT
+================================= */
+
+.main-content {
+  flex: 1;
+  padding: 60px 10%;
+}
+
+/* ===============================
+   PAGE TITLE
+================================= */
+
+.form-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #1f2937;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* ===============================
+   STATES
+================================= */
+
+.loading-message,
+.error-message,
+.no-orders {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.error-message {
+  color: #e53935;
+  font-weight: 600;
+}
+
+.no-orders {
+  color: #6b7280;
+}
+
+/* ===============================
+   ORDERS LIST
+================================= */
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* ===============================
+   ORDER CARD
+================================= */
+
+.order-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+/* FULL BLUE HOVER EFFECT */
+.order-card:hover {
+  background: linear-gradient(135deg, #159bb5, #117a8b);
+  transform: translateY(-8px);
+  box-shadow: 0 20px 50px rgba(17, 122, 139, 0.25);
+}
+
+/* ===============================
+   ORDER HEADER
+================================= */
+
+.order-card-header {
+  background: linear-gradient(90deg, #159bb5, #117a8b);
+  padding: 18px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+}
+
+.order-card-header h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+/* Make header lighter on hover */
+.order-card:hover .order-card-header {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ===============================
+   CARD BODY
+================================= */
+
+.order-card-body {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+/* ===============================
+   PRODUCT IMAGE (NO CUTTING)
+================================= */
+
+.order-product-image {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;   /* 🔥 SHOW FULL IMAGE */
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 16px;
+  border: 1px solid #f0f0f0;
+  transition: transform 0.3s ease;
+}
+
+/* Slight zoom on hover */
+.order-card:hover .order-product-image {
+  transform: scale(1.05);
+}
+
+/* ===============================
+   ORDER DETAILS
+================================= */
+
+.order-details {
+  flex: 1;
+  transition: color 0.3s ease;
+}
+
+.order-details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #417af6;
+  transition: color 0.3s ease;
+}
+
+.order-details p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #4b5563;
+  transition: color 0.3s ease;
+}
+
+/* Highlight total price */
+.order-details p:last-child {
+  font-weight: 600;
+}
+
+/* TEXT TURN WHITE ON HOVER */
+.order-card:hover .order-details h3,
+.order-card:hover .order-details p {
+  color: #ffffff;
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
+@media (max-width: 992px) {
+  .main-content {
+    padding: 40px 6%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .order-card-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-product-image {
+    width: 100%;
+    height: auto;
+  }
+
+  .form-title {
+    font-size: 26px;
+  }
+}

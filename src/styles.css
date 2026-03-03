@@ -1,0 +1,119 @@
+/* ===== Background ===== */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  overflow: hidden;
+}
+
+/* Soft floating shapes */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.15);
+  z-index: 0;
+}
+
+body::before {
+  width: 400px;
+  height: 400px;
+  top: -120px;
+  left: -120px;
+}
+
+body::after {
+  width: 350px;
+  height: 350px;
+  bottom: -100px;
+  right: -100px;
+}
+
+/* ===== Login Card ===== */
+.login-container {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  padding: 50px;
+  border-radius: 20px;
+
+  background: #ffffff;
+  box-shadow: 0 25px 45px rgba(59, 130, 246, 0.2);
+
+  text-align: center;
+  color: #1e3a8a;
+}
+
+/* ===== Heading ===== */
+.heading {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #2563eb;
+}
+
+/* ===== Form Layout ===== */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ===== Labels ===== */
+.login-label {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  color: #1e40af;
+}
+
+/* ===== Inputs ===== */
+.login-input {
+  padding: 14px 18px;
+  border-radius: 30px;
+  border: 1px solid #bfdbfe;
+  outline: none;
+  font-size: 14px;
+
+  background: #f0f9ff;
+  color: #1e3a8a;
+  transition: 0.3s ease;
+}
+
+.login-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.3);
+}
+
+/* ===== Button ===== */
+.login-button {
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== Error ===== */
+.login-error {
+  margin-top: 12px;
+  color: #dc2626;
+  font-size: 14px;
+}
